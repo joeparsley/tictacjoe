@@ -41,4 +41,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.nav-bar-container {
+  height: 75px;
+  border: 2px solid red; }
+
+.footer {
+  height: 75px;
+  border: 2px solid red; }
+
 /*# sourceMappingURL=index.css.map */

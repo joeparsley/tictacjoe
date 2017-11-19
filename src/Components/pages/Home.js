@@ -4,7 +4,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-         HomEWORKS TOO works
+         Home Component
       </div>
     );
   }
