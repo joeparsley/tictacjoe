@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 
 class NavBar extends Component {
@@ -18,13 +19,13 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar className='nav-bar-container' light expand="md">
-          <NavbarBrand href="/">TicTacJoe</NavbarBrand>
+        <Navbar className="nav-bar-container" light expand="md">
+          <NavbarBrand href="/" className="nav-brand">Tic-Tac-Joe!</NavbarBrand>
           <NavbarToggler onClick={this.toggle.bind(this)} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/about">About</NavLink>
+                <NavLink className="nav-link" to="/about" >About</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

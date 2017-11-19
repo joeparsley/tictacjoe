@@ -44,6 +44,11 @@ table {
 .nav-bar-container {
   height: 75px;
   border: 2px solid red; }
+  .nav-bar-container .nav-brand {
+    font-size: 30px;
+    letter-spacing: 1px; }
+  .nav-bar-container .nav-link {
+    font-size: 20px; }
 
 .footer {
   height: 75px;
@@ -51,6 +56,6 @@ table {
 
 .home-container {
   height: calc( 100vh - 150px);
-  background-color: orchid; }
+  background-color: #e0e0e0; }
 
 /*# sourceMappingURL=index.css.map */

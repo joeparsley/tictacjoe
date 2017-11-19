@@ -1,6 +1,11 @@
 .nav-bar-container {
   height: 75px;
   border: 2px solid red; }
+  .nav-bar-container .nav-brand {
+    font-size: 30px;
+    letter-spacing: 1px; }
+  .nav-bar-container .nav-link {
+    font-size: 20px; }
 
 .footer {
   height: 75px;
