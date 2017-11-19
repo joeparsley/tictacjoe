@@ -19,7 +19,7 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar className="nav-bar-container" light expand="md">
+        <Navbar className="nav-bar-container" dark expand="md">
           <NavbarBrand href="/" className="nav-brand">Tic-Tac-Joe!</NavbarBrand>
           <NavbarToggler onClick={this.toggle.bind(this)} />
           <Collapse isOpen={this.state.isOpen} navbar>

@@ -1,18 +1,22 @@
 .nav-bar-container {
-  height: 75px;
-  border: 2px solid red;
+  height: 100px;
+  background-color: $light-green;
 
   .nav-brand {
     font-size: 30px;
     letter-spacing: 1px;
+    color: white;
   }
 
   .nav-link {
     font-size: 20px;
+    color: white;
   }
 }
 
 .footer {
   height: 75px;
-  border: 2px solid red;
+  background-color: $light-green;
+  color: white !important;
+  text-decoration: none;
 }

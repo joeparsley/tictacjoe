@@ -42,20 +42,39 @@ table {
   border-spacing: 0; }
 
 .nav-bar-container {
-  height: 75px;
-  border: 2px solid red; }
+  height: 100px;
+  background-color: #8CD867; }
   .nav-bar-container .nav-brand {
     font-size: 30px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    color: white; }
   .nav-bar-container .nav-link {
-    font-size: 20px; }
+    font-size: 20px;
+    color: white; }
 
 .footer {
   height: 75px;
-  border: 2px solid red; }
+  background-color: #8CD867;
+  color: white !important;
+  text-decoration: none; }
 
 .home-container {
-  height: calc( 100vh - 150px);
-  background-color: #e0e0e0; }
+  height: calc( 100vh - 175px);
+  background-color: #363537;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.start-game-button {
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  background-color: #ED7D3A;
+  border: 1px solid #ED7D3A;
+  cursor: pointer; }
+  .start-game-button:hover {
+    background-color: #EF2D56; }
 
 /*# sourceMappingURL=index.css.map */
