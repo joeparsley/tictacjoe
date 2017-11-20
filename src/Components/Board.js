@@ -73,8 +73,10 @@ class Board extends Component {
     const whosTurn = this.state.turn ? "player #1 it's your turn" : "player #2 It's your turn";
     return (
       <div className="board-container">
-        <h2>Check out this sweet tic tac toe game</h2>
-        <h3>{whosTurn}</h3>
+        <div className="player-info">
+          <h2>Check out this sweet tic tac toe game! future logic will probably go here</h2>
+          <div className="player-turn">{whosTurn}</div>
+        </div>
         <div className="board">
           {
             squares.map(function(item, i) {

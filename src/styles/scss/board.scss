@@ -2,17 +2,30 @@
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  h2 {
-    font-size: 30px;
-    margin: 10px 0;
+
+  .player-info {
+    height: 650px;
+    width: 400px;
+    background-color: $light-green;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    h2 {
+      font-size: 30px;
+      margin: 50px 0;
+    }
+    .player-turn {
+      padding: 15px;
+      font-size: 20px;
+      margin: 10px auto;
+      background-color: $orange;
+      border-radius: 10px;
+      width: 75%;
+    }
   }
-  h3 {
-   font-size: 20px;
-    margin: 10px 0;
-  }
+
   .board {
     display: flex;
     flex-wrap: wrap;
@@ -22,16 +35,14 @@
     width: 650px;
     background-color: $red;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 3px #616161;
   }
 
   .square {
-    height: 175px;
-    width: 175px;
+    height: 30%;
+    width: 30%;
     background-color: $orange;
     border-radius: 10px;
-    margin: 5px;
-    box-shadow: 1px 1px 1px 1px $darkgray;
+    margin: 7.5px;
     display: flex;
     justify-content: center;
     align-items: center;
