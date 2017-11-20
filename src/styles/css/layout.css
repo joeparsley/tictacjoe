@@ -5,11 +5,11 @@ Error: Undefined variable: "$light-green".
 1: .nav-bar-container {
 2:   height: 100px;
 3:   background-color: $light-green;
-4: 
-5:   .nav-brand {
-6:     font-size: 30px;
-7:     letter-spacing: 1px;
-8:     color: white;
+4:   .nav-brand {
+5:     font-size: 30px;
+6:     letter-spacing: 1px;
+7:     color: white;
+8:   }
 
 Backtrace:
 src/styles/scss/layout.scss:3
@@ -66,4 +66,4 @@ src/styles/scss/layout.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-green\".\A         on line 3 of src/styles/scss/layout.scss\A \A 1: .nav-bar-container {\A 2:   height: 100px;\A 3:   background-color: $light-green;\A 4: \A 5:   .nav-brand {\A 6:     font-size: 30px;\A 7:     letter-spacing: 1px;\A 8:     color: white;"; }
+  content: "Error: Undefined variable: \"$light-green\".\A         on line 3 of src/styles/scss/layout.scss\A \A 1: .nav-bar-container {\A 2:   height: 100px;\A 3:   background-color: $light-green;\A 4:   .nav-brand {\A 5:     font-size: 30px;\A 6:     letter-spacing: 1px;\A 7:     color: white;\A 8:   }"; }

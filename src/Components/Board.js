@@ -3,42 +3,50 @@ import React, { Component } from 'react';
 const SQUARES = [
   {
     className: 'square',
-    postion: '1A',
+    position: '1A',
+    play: [],
   },
   {
     className: 'square',
-    postion: '1B',
+    position: '1B',
+    play: [],
   },
   {
     className: 'square',
-    postion: '1C',
+    position: '1C',
+    play: [],
   },
   {
     className: 'square',
-    postion: '2A',
+    position: '2A',
+    play: [],
   },
   {
     className: 'square',
-    postion: '2B',
+    position: '2B',
+    play: [],
   },
   {
     className: 'square',
-    postion: '2C',
+    position: '2C',
+    play: [],
   },
   {
     className: 'square',
-    postion: '3A',
+    position: '3A',
+    play: [],
   },
   {
     className: 'square',
-    postion: '3B',
+    position: '3B',
+    play: [],
   },
   {
     className: 'square',
-    postion: '3C',
+    position: '3C',
+    play: [],
   },
 ];
-
 
 class Board extends Component {
   state = {
@@ -46,24 +54,34 @@ class Board extends Component {
     turn: true,
   };
 
-  handleClick() {
-    alert("woahhh");
+  playerTurn(index) {
+    if ( this.state.turn === true ) {
+      this.state.board[index].play.push('X');
+      this.setState({
+        turn: !this.state.turn,
+      });
+    } else if ( this.state.turn === false ) {
+        this.state.board[index].play.push('O');
+        this.setState({
+          turn: !this.state.turn,
+        });
+    }
   }
 
   render() {
     const squares = this.state.board;
-    const playerTurn = this.state.turn ? "player #1 it's your turn" : "player #2 It's your turn";
+    const whosTurn = this.state.turn ? "player #1 it's your turn" : "player #2 It's your turn";
     return (
       <div className="board-container">
         <h2>Check out this sweet tic tac toe game</h2>
-        <h3>{playerTurn}</h3>
+        <h3>{whosTurn}</h3>
         <div className="board">
           {
             squares.map(function(item, i) {
               return (
-                <div key={i} className={item.className}></div>
+                <div key={i} className={item.className} onClick={this.playerTurn.bind(this, i)}>{item.play}</div>
               );
-            })
+            }.bind(this))
           }
         </div>
       </div>

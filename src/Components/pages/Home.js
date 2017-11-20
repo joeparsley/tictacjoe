@@ -18,7 +18,7 @@ class Home extends Component {
 
   renderGame() {
     return (
-      <div>
+      <div className="game-container">
         <Board/>
       </div>
     );

@@ -1,5 +1,4 @@
 .board-container {
-  //border: 1px solid red;
   height: 100%;
   width: 100%;
   display: flex;
@@ -23,7 +22,7 @@
     width: 650px;
     background-color: $red;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px 2px black;
+    box-shadow: 1px 1px 1px 3px #616161;
   }
 
   .square {
@@ -31,7 +30,12 @@
     width: 175px;
     background-color: $orange;
     border-radius: 10px;
-    margin: 15px;
+    margin: 5px;
     box-shadow: 1px 1px 1px 1px $darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    cursor: pointer;
   }
 }

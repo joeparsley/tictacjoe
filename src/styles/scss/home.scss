@@ -15,9 +15,12 @@
   background-color: $orange;
   border: 1px solid $orange;
   cursor: pointer;
-
   &:hover {
     background-color: $red;
   }
+}
+
+.game-container {
+  border: 3px solid lime;
 }
 
