@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { Button } from 'reactstrap';
 
+import Board from '../Board';
+
 class Home extends Component {
 
   state = {
@@ -17,7 +19,7 @@ class Home extends Component {
   renderGame() {
     return (
       <div>
-        the game has started
+        <Board/>
       </div>
     );
   }
