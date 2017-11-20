@@ -26,7 +26,9 @@ class Home extends Component {
 
   renderStartButton() {
     return(
-      <div>
+      <div className="start-game-container">
+        <h1>Welcome to Tic-Tac-Joe!</h1>
+        <h4>A web app built using ReactJS to show case my skills with this popular JavaScript Library</h4>
         <Button className="start-game-button" onClick={this.toggle.bind(this)}>Start Game!</Button>
       </div>
     );
@@ -40,7 +42,6 @@ class Home extends Component {
       </div>
     );
   }
-
 }
 
 export default Home;
